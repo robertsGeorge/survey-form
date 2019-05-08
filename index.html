@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Help us improve our services</p>
+  <form id="survey-form" action="#" method="POST">
+    <label for="name" id="name-label">* Name:</label>
+    <input type="text" name="name" placeholder="Enter your name" id="name" autofocus required>
+
+    <label for="email" id="email-label">* Email:</label>
+    <input type="email" name="email" id="email" placeholder="Enter an email address" required>
+
+    <label for="number" id="number-label">Age:</label>
+    <input type="number" id="number" name="age" min="16" max="110" placeholder="Enter your age">
+
+    <label for="dropdown">Which option best describes your current role?</label>
+    <select name="currentPos" id="dropdown">
+      <option disabled>Select an option</option>
+      <option value="student">Student</option>
+      <option value="job">Full Time Job</option>
+      <option value="learner">Full Time learner</option>
+      <option value="preferNo">Prefer not to say</option>
+    </select>
+
+    <fieldset>
+      <legend>How likely is it that you would recommend service x to a friend?</legend>
+      
+      <input type="radio" name="recommend" value="likely" id="likely">
+      <label for="likely"> Likely</label>
+
+      <input type="radio" name="recommend" value="quite likely" id="quite likely">
+      <label for="quite likely"> Quite Likely</label>
+      
+      <input type="radio" name="recommend" value="not likely" id="not likely">
+      <label for="not likely"> Not Likely</label>
+    
+    </fieldset>
+
+  </form>
+
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
