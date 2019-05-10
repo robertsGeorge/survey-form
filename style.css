@@ -1,3 +1,24 @@
 #wrapper {
-  
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 100px auto;
 }
+h1 + p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#survey-form > label, 
+#survey-form > fieldset,
+button {
+  margin-top: 40px;
+
+}
+
+/* FLEX CONTAINER */
+#survey-form {
+  display: flex;
+  flex-direction: column;
+}
+
