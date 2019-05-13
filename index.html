@@ -35,34 +35,50 @@
       </select>
   
       <fieldset>
-        <legend>How likely is it that you would recommend service x to a friend?</legend>
+        <legend>How likely is it that you would recommend service x?</legend>
         
-        <input type="radio" name="recommend" value="likely" id="likely">
-        <label for="likely"> Likely</label>
-  
-        <input type="radio" name="recommend" value="quite likely" id="quite likely">
-        <label for="quite likely"> Quite Likely</label>
-        
-        <input type="radio" name="recommend" value="not likely" id="not likely">
-        <label for="not likely"> Not Likely</label>
-      
+        <ul>
+          <li>
+            <input type="radio" name="recommend" value="likely" id="likely">
+            <label for="likely"> Likely</label>
+          </li>
+          <li>
+            <input type="radio" name="recommend" value="quite likely" id="quite likely">
+            <label for="quite likely"> Quite Likely</label>
+          </li>
+          <li>
+            <input type="radio" name="recommend" value="not likely" id="not likely">
+            <label for="not likely"> Not Likely</label>
+          </li>
+        </ul>
       </fieldset>
   
+
       <fieldset>
         <legend>Things that should be improved in the future:</legend>
+        <ul class="ul-checkboxes">
+          <li>
+            <input type="checkbox" name="improve" value = "front-end-projects" id="front-end-projects">
+            <label for="front-end-projects">Front end projects</label>
+          </li>
+          <li>
+            <input type="checkbox" name="improve" value = "back-end-projects" id="back-end-projects">
+            <label for="back-end-projects">Back end projects</label>
+          </li>
+          <li>
+            <input type="checkbox" name="improve" value = "data-visualisation" id="data-visualisation">
+            <label for="data-visualisation">Data visualisation</label>
+          </li>
+        </ul>
         
-        <input type="checkbox" name="improve" value = "front-end-projects" id="front-end-projects">
-        <label for="front-end-projects">Front end projects</label>
   
-        <input type="checkbox" name="improve" value = "back-end-projects" id="back-end-projects">
-        <label for="back-end-projects">Back end projects</label>
         
-        <input type="checkbox" name="improve" value = "data-visualisation" id="data-visualisation">
-        <label for="data-visualisation">Data visualisation</label>
+        
+        
       </fieldset>
   
       <label for="further-comments">Any further comments or suggestions?</label>
-      <textarea name="further-comments" id="further-comments" cols="30" rows="10" placeholder="Please let us know any further comments here"></textarea>
+      <textarea name="further-comments" id="further-comments" cols="30" rows="7" placeholder="Please let us know any further comments here"></textarea>
     
       <button type="submit" id="submit">Submit</button>
     </form>

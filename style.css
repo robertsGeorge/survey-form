@@ -16,9 +16,36 @@ button {
 
 }
 
+form > label, fieldset > legend, button {
+  font-size: 1.15em;
+}
+
+button {
+  height: 40px;
+}
 /* FLEX CONTAINER */
 #survey-form {
   display: flex;
   flex-direction: column;
 }
 
+/* Nested Flex Container */
+fieldset {
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+/* flex items */
+fieldset > label {
+  width: 300px;
+  /* flex-basis: 40%; */
+  border: 1px solid red;
+}
+
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
