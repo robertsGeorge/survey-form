@@ -36,24 +36,20 @@ button {
   font-weight: bold;
   background-color: rgb(90, 195, 236);
 }
+
+
 /* FLEX CONTAINER */
 #survey-form {
   display: flex;
   flex-direction: column;
 }
 
-/* Nested Flex Container */
-fieldset {
-  /* display: flex; */
-  /* flex-direction: row; */
-}
 /* flex items */
 fieldset > label {
   width: 300px;
   /* flex-basis: 40%; */
   border: 1px solid red;
 }
-
 
 ul {
   list-style: none;
